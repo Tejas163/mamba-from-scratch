@@ -1,0 +1,12 @@
+[book]
+title = "Build Mamba from Scratch"
+description = "Learn to implement Mamba selective state space models from scratch - an educational guide"
+authors = ["Educational"]
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/yourusername/mamba-from-scratch"
+
+[output.html.playground]
+editable = true
+copyable = true
