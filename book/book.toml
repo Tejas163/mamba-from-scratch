@@ -5,7 +5,7 @@ authors = ["Educational"]
 
 [output.html]
 mathjax-support = true
-git-repository-url = "https://github.com/yourusername/mamba-from-scratch"
+git-repository-url = "https://github.com/Tejas163/mamba-from-scratch"
 
 [output.html.playground]
 editable = true
