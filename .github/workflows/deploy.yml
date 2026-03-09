@@ -27,8 +27,9 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install mdBook
-        run: |
-          curl --proto '=https' --tlsv1.2 -sSf https://rsys.github.io/mdbook/installer.sh | sh
+        uses: actions-rs/install@v0.1
+        with:
+          crate: mdbook
 
       - name: Build book
         run: mdbook build book
@@ -36,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./book/html
+          path: ./book/book
 
       - name: Deploy to GitHub Pages
         id: deployment
